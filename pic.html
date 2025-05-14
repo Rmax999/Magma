@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>privete</title>
+  <style>
+  body{
+    margin: 0;
+    padding:0;
+  }
+    header{
+      justify-content: center;
+      
+    }
+    #hedding{
+      text-align: center;
+      margin-bottom: 0;
+      
+    }
+    
+#tt{
+  text-align: center;
+  margin-top: 0;
+}
+#ttt{
+  text-align: center;
+  margin-top: 0;
+  
+  
+}
+#user{
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  border-left: none;
+  border-right: none;
+  padding: 5px 0px;
+}
+#for{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#btn{
+  padding: 3px;
+  width: 60px;
+  background: white;
+  border-radius: 5px;
+  margin-left: 32%;
+}
+
+#alert{
+  background: black;
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  border: 2px solid red;
+  Margin-left: 45px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px black;
+}
+#alert h3, #alert h4{
+  text-align: center;
+  color: red;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#alert p{
+  text-align: center ;
+  color: red;
+}
+#alert hr{
+  border: 0.5px solid red;
+  margin: 0;
+  width: 70%;
+  margin-left: 30px;
+  text-align: center;
+}
+
+
+#galert{
+  background: white;
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  border: 2px solid #03CD2A;
+  Margin-left: 45px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #03CD2A;
+}
+#galert h3, #galert h4{
+  text-align: center;
+  color: #03CD2A;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#galert p{
+  text-align: center ;
+  color: #03CD2A;
+}
+#galert hr{
+  border: 0.5px solid #03CD2A;
+  margin: 0;
+  width: 70%;
+  margin-left: 30px;
+  text-align: center;
+}
+#alert #wbt{
+  background: black;
+  border: 0.5px solid red;
+  border-radius: 5px;
+  margin-left: 85px;
+  color: red;
+  padding: 3px;
+  width: 80px;
+}
+#galert{
+  display: none;
+}
+#galert #sbt{
+  background: white;
+  border: 0.5px solid #03CD2A;
+  border-radius: 5px;
+  margin-left: 85px;
+  color: #03CD2A;
+  padding: 3px;
+  width: 80px;
+}
+  </style>
+</head>
+
+<body>
+  
+    <header>
+      <h2 id="hedding">Security Page</h2>
+      <hr>
+      <p id="ttt">This Is Ony For Developer</p>
+    </header>
+    <br><br>
+    <nav>
+      <h3 id="tt">Enter Password to access Domaine page</h3>
+    </nav>
+    <section>
+      <div id="for">
+      <form>
+       
+    <input type="password" id="user" placeholder="Enter Access Code">
+    <br>
+    <br><br>
+    <input type="button" id="btn" value="Enter">
+      </form>
+      
+      
+      </div>
+      
+       <div id="galert">
+   <h3>OPENING...</h3>
+   <hr>
+   <h4>Correct Password</h4>
+   <p>Access Accepted</p>
+   <button id="sbt">Open</button>
+ </div>
+      
+      
+      <div id="alert">
+        <h3>&#9888 WARNING</h3>
+        
+        <hr>
+        <h4>Wrong Password</h4>
+        <p>Access Denied</p>
+        <button id="wbt">Try Again</button>
+      </div>
+    </section>
+    
+    <footer></footer>
+    
+    
+<script>
+  document.getElementById("btn").onclick = function (){
+    const id = document.getElementById("user").value;
+    let a = document.getElementById("alert");
+    let b = document.getElementById("galert");
+    if(id == "Mag7@")
+    {
+      b.style.display = "block";
+    }
+    else
+    {
+      a.style.display = "block";
+    }
+  }
+  document.getElementById("wbt").onclick = function (){
+    document.getElementById("alert").style.display = "none";
+  }
+  
+  document.getElementById("sbt").onclick = function() {
+ let dd =  document.getElementById("galert");
+}
+</script>   
+</body>
+
+</html>
