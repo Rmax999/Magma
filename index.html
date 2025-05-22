@@ -246,7 +246,7 @@ body{
 
   </div>
   
-  
+  <audio id="ab" src="yaad hai.mp3" controls></audio>
          <!--Writen pain-->
          <!--Writen pain-->
          <!--Writen pain-->
@@ -265,7 +265,11 @@ body{
 
 </div>
 <script>
-  
+  document.getElementById("musi").onclick = function (){
+   document.querySelector('#ab').play();
+   document.querySelector('#ab').volume = 0.1;
+   document.querySelector('#ab').style.opacity = 0;
+  }
 </script>
 
 </body>
