@@ -219,12 +219,19 @@ Mai tumhe lipat kar rounga <br>jab tumhari bidai hogi</p>
     <p id="sarr"> Developed by Magma</p>
   <p id="sar">&copy; 2025 My Heart Pain. All rights reserved.</p>
   </div>
-  
+  <audio id="ab" controls></audio>
   </div>
   
 </div>
 </main>
 </div>
+  <script>
+    document.getElementById("musi").onclick = function (){
+   document.querySelector('#ab').play();
+   document.querySelector('#ab').volume = 0.1;
+   document.querySelector('#ab').style.opacity = 0;
+    }
+  </script>
 </body>
 
 </html>
