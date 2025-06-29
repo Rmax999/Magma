@@ -270,8 +270,18 @@ body{
    document.querySelector('#ab').volume = 0.1;
    document.querySelector('#ab').style.opacity = 0;
   }
+
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach((video) => {
+    video.addEventListener("play", () => {
+      videos.forEach((v) => {
+        if (v !== video) {
+          v.pause();
+        }
+      });
+    });
+  });
 </script>
-
 </body>
-
 </html>
